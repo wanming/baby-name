@@ -4,9 +4,9 @@ import * as fs from "fs";
 
 const URL = "http://xuezhouyi.com/index/api/quming";
 const POST_DATA = {
-  xing: "万",
+  xing: "酷",
   sex: "男",
-  birthday: "公历+2019年12月19日11时",
+  birthday: "公历+2011年11月11日11时",
   nametype: "双字名",
   limit: 10
 };
