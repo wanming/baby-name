@@ -2,8 +2,8 @@ import * as _ from "lodash";
 import axios from "axios";
 import * as fs from "fs";
 
-const url = "http://xuezhouyi.com/index/api/quming";
-const postData = {
+const URL = "http://xuezhouyi.com/index/api/quming";
+const POST_DATA = {
   xing: "万",
   sex: "男",
   birthday: "公历+2019年12月19日11时",
@@ -22,13 +22,11 @@ async function main() {
       }
       return null;
     })
-    .filter(ii => {
-      return ii && ii.score >= 90;
-    });
+    .filter(ii => Boolean(ii));
 
   while (true) {
     try {
-      const result = await axios.post(url, postData);
+      const result = await axios.post(URL, POST_DATA);
       _.get(result, "data.data.data")
         .map((ii: any) => {
           return {
