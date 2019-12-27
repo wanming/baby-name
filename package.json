@@ -1,0 +1,39 @@
+{
+  "name": "baby-name",
+  "version": "1.0.0",
+  "description": "Name your baby",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "c": "ts-node crawl.ts",
+    "crawl": "ts-node crawl.ts",
+    "f": "ts-node filter.ts",
+    "filter": "ts-node filter.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wanming/baby-name.git"
+  },
+  "keywords": [
+    "baby",
+    "name"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wanming/baby-name/issues"
+  },
+  "homepage": "https://github.com/wanming/baby-name#readme",
+  "devDependencies": {
+    "@types/lodash": "^4.14.149",
+    "@types/node": "^13.1.1",
+    "ts-node": "^8.5.4",
+    "typescript": "^3.7.4"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "bluebird": "^3.7.2",
+    "lodash": "^4.17.15",
+    "pinyin": "^2.9.0"
+  }
+}
